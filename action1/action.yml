@@ -4,7 +4,7 @@ runs:
   using: "composite"
   steps:
     - name: Obtain Source
-      uses: actions/checkout@v1.004
+      uses: actions/checkout@v2
     - name: Get dependencies
       env:
         cmake_version: ${{ matrix.cmake_version }}
