@@ -9,3 +9,4 @@ runs:
       env:
         cmake_version: ${{ matrix.cmake_version }}
       run: .github/workflows/scripts/get_dependencies.sh cmake doxygen sphinx
+      shell: bash
