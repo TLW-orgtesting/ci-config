@@ -1,9 +1,6 @@
 name: Test Documentation
 runs:
   using: "composite"
-  strategy:
-    matrix:
-      cmake_version: [3.16.3]
   steps:
     - name: Obtain Source
       uses: actions/checkout@v2
