@@ -22,4 +22,4 @@ jobs:
     - name: Build documentation
       env:
         cmake_version: ${{ matrix.cmake_version }}
-      run: .github/workflows/scripts/build_docs.sh ${{repoName}}
+      run: .github/workflows/scripts/build_docs.sh ${{inputs.repoName}}
