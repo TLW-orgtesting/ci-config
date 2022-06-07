@@ -1,14 +1,12 @@
 name: Run clang-format Linter
 
-on: 
+on:
   push:
   workflow_call:
     inputs:
       source:
         required: true
         type: string
-   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
