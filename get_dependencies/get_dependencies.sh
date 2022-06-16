@@ -207,9 +207,11 @@ get_togglebutton() {
 #                               Main Script                                    #
 ################################################################################
 set -e # Exit with error if any command fails
-str="${{inputs.dependencies}}"
-declare -a array=($str)
-for depend in "${array[@]}"; do
+#str="${{inputs.dependencies}}"
+#declare -a array=($str)
+#for depend in "$@"; do
+#for depend in "${array[@]}"; do
+for depend in "$@"; do
   echo "Getting dependency: ${depend}"
   # Please use camel_case for dependency names and keep the if-statements in
   # alphabetical order.
