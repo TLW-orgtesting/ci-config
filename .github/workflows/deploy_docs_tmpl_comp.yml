@@ -17,10 +17,8 @@ jobs:
     env:
       cmake_version: 3.16.3
     steps:
-      - name: Obtain Source
-        uses: actions/checkout@v2
-      - name: Get dependencies
-        uses: TLW-orgtesting/ci-config/get_dependencies@v1.013
+      - name: Checkout and Get dependencies
+        uses: TLW-orgtesting/ci-config/get_dependencies@v1.014
         with:
           dependencies: ${{inputs.dependencies}}
       - name: Build documentation
