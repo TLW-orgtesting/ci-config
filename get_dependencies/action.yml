@@ -6,7 +6,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    cmake_version: ${{ matrix.cmake_version }}
     - name: Obtain Source
       uses: actions/checkout@v2
     - name: Get dependencies
