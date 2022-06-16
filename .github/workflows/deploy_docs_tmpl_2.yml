@@ -254,7 +254,7 @@ jobs:
 
           set -e # Exit with error if any command fails
           
-          str=${{inputs.dependencies}}
+          str="${{inputs.dependencies}}"
           
           declare -a array=($str)
 
