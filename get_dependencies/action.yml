@@ -7,7 +7,7 @@ runs:
   using: "composite"
   steps:
     - name: Get dependencies
-    - run: |
+      run: |
         #!/bin/sh
         ################################################################################
         #
@@ -264,4 +264,4 @@ runs:
             exit 99
           fi
         done
-    shell: bash 
+      shell: bash 
