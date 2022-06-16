@@ -6,6 +6,8 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Obtain Source
+      uses: actions/checkout@v2
     - name: Get dependencies
       run: |
         #!/bin/sh
