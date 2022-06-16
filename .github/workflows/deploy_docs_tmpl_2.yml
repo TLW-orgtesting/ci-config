@@ -254,9 +254,9 @@ jobs:
 
           set -e # Exit with error if any command fails
           
-          string = ${{inputs.dependencies}}
+          str=${{inputs.dependencies}}
           
-          declare -a array=($string)
+          declare -a array=($str)
 
           for depend in "${array[@]}"; do
             echo "Getting dependency: ${depend}"
