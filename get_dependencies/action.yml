@@ -6,8 +6,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Obtain Source
-      uses: actions/checkout@v2
     - name: Give Permission
       run: chmod +x ${{github.action_path}}/get_dependencies.sh 
       shell: bash 
