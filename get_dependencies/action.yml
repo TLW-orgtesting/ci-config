@@ -13,5 +13,5 @@ runs:
       env:
         cmake_version: 3.16.3
         arch: Linux-x86_64
-    - run: ${{github.action_path}}/get_dependencies.sh ${{inputs.dependencies}}
+      run: ${{github.action_path}}/get_dependencies.sh ${{inputs.dependencies}}
       shell: bash 
