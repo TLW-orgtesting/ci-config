@@ -8,6 +8,9 @@ runs:
   steps:
     - name: Obtain Source
       uses: actions/checkout@v2
+    - name: Give Permission
+      run: chmod +x ${{github.action_path}}/get_dependencies.sh 
+      shell: bash 
     - name: Get dependencies
       run: ${{github.action_path}}/get_dependencies.sh ${{inputs.dependencies}}
       shell: bash 
