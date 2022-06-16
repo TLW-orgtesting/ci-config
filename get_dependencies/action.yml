@@ -10,8 +10,5 @@ runs:
     - name: Obtain Source
       uses: actions/checkout@v2
     - name: Get dependencies
-      env:
-        cmake_version: 3.16.3
-        arch: Linux-x86_64
       run: ${{github.action_path}}/get_dependencies.sh ${{inputs.dependencies}}
       shell: bash 
