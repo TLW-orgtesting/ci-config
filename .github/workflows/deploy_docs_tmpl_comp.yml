@@ -20,7 +20,7 @@ jobs:
       - name: Obtain Source
         uses: actions/checkout@v2
       - name: Get dependencies
-        uses: TLW-orgtesting/ci-config/get_dependencies@v1.011
+        uses: TLW-orgtesting/ci-config/get_dependencies@v1.012
         with:
           dependencies: ${{inputs.dependencies}}
       - name: Build documentation
