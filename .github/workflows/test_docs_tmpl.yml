@@ -23,6 +23,8 @@ jobs:
     - name: Obtain Source
       uses: actions/checkout@v2
     - name: Get dependencies
+      env:
+        cmake_version: ${{ matrix.cmake_version }}
       uses: TLW-orgtesting/ci-config/get_dependencies@v1.021
       with:
         dependencies: ${{inputs.dependencies}}
