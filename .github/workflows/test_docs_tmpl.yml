@@ -5,6 +5,9 @@ on:
       repoName:
         required: true
         type: string
+      dependencies:
+        required: true
+        type: string
   workflow_dispatch:
   pull_request:
     branches:
@@ -20,9 +23,9 @@ jobs:
     - name: Obtain Source
       uses: actions/checkout@v2
     - name: Get dependencies
-      env:
-        cmake_version: ${{ matrix.cmake_version }}
-      run: .github/workflows/scripts/get_dependencies.sh cmake doxygen sphinx
+      uses: TLW-orgtesting/ci-config/get_dependencies@v1.021
+      with:
+        dependencies: ${{inputs.dependencies}}
     - name: Build documentation
       env:
         cmake_version: ${{ matrix.cmake_version }}
