@@ -35,7 +35,7 @@ jobs:
           cmake_version: ${{ matrix.cmake_version }}
           gcc_version: ${{ matrix.gcc_version }}
           CPP_GITHUB_TOKEN: ${{ secrets.CPP_GITHUB_TOKEN }}
-        run: .github/workflows/scripts/build_and_test.sh
+        uses: TLW-orgtesting/ci-config/build_and_test@v1.023
       - uses: codecov/codecov-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
