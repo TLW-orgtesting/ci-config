@@ -1,7 +1,6 @@
 name: Run clang-format Linter
 
 on:
-  push:
   workflow_call:
     inputs:
       source:
